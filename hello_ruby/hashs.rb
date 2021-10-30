@@ -13,7 +13,7 @@ p symbol_hash
 p symbol_hash.keys
 p symbol_hash.values
 symbol_hash.each do |key, value|
-  puts "the key of hashs is #{key} 
+  puts "the key of hashs is #{key}
   and it's class is #{key.class}, the value is #{value.class}"
 end
 p symbol_hash[:a] # 2

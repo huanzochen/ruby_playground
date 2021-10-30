@@ -1,0 +1,344 @@
+Metrics/LineLength:
+  Max: 150
+  Enabled: true
+
+Style/DotPosition:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: true
+  Exclude:
+    - "lib/**/*"
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: true
+
+Lint/AssignmentInCondition:
+  Enabled: true
+
+Lint/BlockAlignment:
+  Enabled: true
+
+Lint/EndAlignment:
+  Enabled: true
+
+Lint/HandleExceptions:
+  Enabled: true
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+
+Style/AlignParameters:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: true
+
+Style/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+Style/RedundantReturn:
+  Enabled: true
+
+Style/IndentationWidth:
+  Enabled: true
+
+Style/TrailingCommaInLiteral:
+  Enabled: true
+
+Style/TrailingCommaInArguments:
+  Enabled: true
+
+Style/CommentAnnotation:
+  Enabled: true
+
+Style/OpMethod:
+  Enabled: true
+
+Style/FormatString:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - "*"
+    - "docker_build/**/*"
+    - "bin/**/*"
+    - "db/**/*"
+    - "config/**/*"
+    - "script/**/*"
+    - "spec/**/*"
+    - "mobileweb/**/*"
+    - "vendor/assets/javascripts/bower/**/*"
+    - "client/**/*"
+    - "node_modules/**/*"
+
+inherit_from: .rubocop_todo.yml
+
+Metrics/MethodLength:
+  Max: 30
+  Enabled: false
+
+# Offense count: 192
+# Cop supports --auto-correct.
+Lint/UnusedBlockArgument:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+
+Style/AccessModifierIndentation:
+  Enabled: true
+
+Style/Alias:
+  Enabled: true
+  EnforcedStyle: prefer_alias_method
+
+Style/AlignArray:
+  Enabled: true
+
+Style/AlignHash:
+  Enabled: true
+
+# Offense count: 11
+# Cop supports --auto-correct.
+Style/AndOr:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: true
+
+Style/BracesAroundHashParameters:
+  Enabled: true
+
+Style/ClassCheck:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/ColonMethodCall:
+  Enabled: true
+
+# Offense count: 36
+# Cop supports --auto-correct.
+Style/CommentIndentation:
+  Enabled: false
+
+Style/DefWithParentheses:
+  Enabled: true
+
+Style/PreferredHashMethods:
+  Enabled: true
+
+Style/EmptyLineBetweenDefs:
+  Enabled: true
+
+Style/EmptyLines:
+  Enabled: true
+
+Style/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: true
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+Style/EmptyLiteral:
+  Enabled: true
+
+Style/HashSyntax:
+  Enabled: true
+
+Style/IndentArray:
+  Enabled: true
+
+Style/IndentHash:
+  Enabled: true
+
+Style/IndentationConsistency:
+  Enabled: true
+
+# Offense count: 4
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/LambdaCall:
+  Enabled: false
+
+Style/LeadingCommentSpace:
+  Enabled: true
+
+Style/LineEndConcatenation:
+  Enabled: true
+
+# Offense count: 13
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: true
+
+Style/NegatedIf:
+  Enabled: true
+
+Style/NilComparison:
+  Enabled: true
+
+Style/Not:
+  Enabled: true
+
+Style/NumericLiterals:
+  MinDigits: 11
+
+Style/ParenthesesAroundCondition:
+  Enabled: true
+
+Style/PercentLiteralDelimiters:
+  Enabled: true
+
+# Offense count: 32
+# Cop supports --auto-correct.
+Style/PerlBackrefs:
+  Enabled: false
+
+Style/Proc:
+  Enabled: true
+
+# Offense count: 25
+# Cop supports --auto-correct.
+Style/RedundantBegin:
+  Enabled: false
+
+# Offense count: 466
+Style/RedundantSelf:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: true
+
+Style/SignalException:
+  Enabled: true
+  EnforcedStyle: semantic
+
+# Offense count: 3
+# Cop supports --auto-correct.
+# Configuration parameters: AllowIfMethodIsEmpty.
+Style/SingleLineMethods:
+  Enabled: false
+
+Style/SpaceBeforeFirstArg:
+  Enabled: true
+
+Style/SelfAssignment:
+  Enabled: true
+
+Style/SpaceAfterColon:
+  Enabled: true
+
+Style/SpaceAfterComma:
+  Enabled: true
+
+Style/SpaceAfterNot:
+  Enabled: true
+
+Style/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+Style/SpaceAroundOperators:
+  Enabled: true
+
+Style/SpaceBeforeBlockBraces:
+  Enabled: true
+
+Style/SpaceBeforeComma:
+  Enabled: true
+
+Style/SpaceBeforeComment:
+  Enabled: true
+
+Style/SpaceAroundKeyword:
+  Enabled: true
+
+Style/SpaceBeforeSemicolon:
+  Enabled: true
+
+# Offense count: 797
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles, EnforcedStyleForEmptyBraces, SpaceBeforeBlockParameters.
+Style/SpaceInsideBlockBraces:
+  Enabled: false
+
+Style/SpaceInsideBrackets:
+  Enabled: true
+
+# Offense count: 670
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBraces, SupportedStyles.
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Style/SpaceInsideParens:
+  Enabled: true
+
+# Offense count: 16
+# Cop supports --auto-correct.
+Style/SpecialGlobalVars:
+  Enabled: false
+
+# Offense count: 4128
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/StringLiterals:
+  Enabled: true
+
+# Offense count: 90
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/TrailingBlankLines:
+  Enabled: false
+
+Style/TrailingWhitespace:
+  Enabled: true
+
+# Offense count: 9
+# Cop supports --auto-correct.
+# Configuration parameters: ExactNameMatch, AllowPredicates, AllowDSLWriters, Whitelist.
+Style/TrivialAccessors:
+  Enabled: false
+
+# Offense count: 26
+# Cop supports --auto-correct.
+Style/UnneededPercentQ:
+  Enabled: false
+
+Style/WhileUntilDo:
+  Enabled: true
+
+# Offense count: 88
+# Cop supports --auto-correct.
+Style/WordArray:
+  MinSize: 27
+
+Style/For:
+  Enabled: true
+
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+# Offense count: 78
+# Cop supports --auto-correct.
+Lint/StringConversionInInterpolation:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
