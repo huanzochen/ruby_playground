@@ -53,3 +53,11 @@ puts say_hello_to "tommy", {age: 18, favorite: 'mouse mouse'}
 # 開始省略一些東西
 puts say_hello_to "tommy", age: 18, favorite: 'mouse mouse'
 
+
+# Use keyword arguments to increase clarity
+def keyword(keyword1:, keyword2:, keyword3:)
+    return "this is #{keyword1}, #{keyword2}, #{keyword3}"
+end
+
+puts keyword(keyword1: 'aaa', keyword3: 'ccc', keyword2: 'bbb')
+
