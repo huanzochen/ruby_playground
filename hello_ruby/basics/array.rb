@@ -7,7 +7,7 @@ puts friends.first
 list = [1,2,3,4,5]
 p list.map {|i| i * 2 - 1}
 print [*1..42]
-puts [*1..42].sample(5)
+p [*1..42].sample(3)
 
 # 舊式的 hash 寫法
 old_hash = {:title => "Ruby", :price => 350}
@@ -20,5 +20,10 @@ p old_hash == new_hash # true
 profile = {name: "5xruby", age: 18, tel: "0983153268"}
 # puts profile[name] # undefined local variable name
 puts profile[:name]
+puts profile[:age]
+
+p profile
+print profile
+puts profile
 
 

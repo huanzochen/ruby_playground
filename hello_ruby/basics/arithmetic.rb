@@ -19,4 +19,12 @@ for i in (1..10000)
 end
 print sum # 會看到印出來的值其實不是非常精確的
 
+p "aaaa"
+
+big_decimal_sum = BigDecimal("0")
+for i in (1..10000)
+    big_decimal_sum = big_decimal_sum + BigDecimal("0.0001" )
+end
+print big_decimal_sum # 會看到印出來的值是精確的
+
 
